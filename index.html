@@ -21,14 +21,15 @@
                 <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                
             </ul>
 
             <div id="acessibilidade" class="menu-acessibilidade">
-                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold">Acessibilidade</button>
+                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold"  aria-expanded="false">Acessibilidade</button>
                 <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista ">
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
-
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>
 
                 </div>
             </div>
@@ -49,13 +50,13 @@
                         conhecer!</a>
                 </div>
                 <img src="img/lossy-page1-640px-Elis_Regina_(1965).tif.png"
-                    alt="A imagem apresenta o grupo musical Os mutantes, sao tres pessoas cantando em  dois microfones"
+                    alt="A imagem apresenta a cantora brasileira Elis Regina"
                     title="Elis Regina - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
 
             </div>
         </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0">
             <div class="container d-flex align-items-center ">
                 <div class="col-4 d-flex justify-content-center">
                     <img src="img/ElisBA1979.jpg" class="rounded-pill" alt="" width="273" height="331" loading="lazy">
@@ -67,7 +68,7 @@
             </div>
         </section>
 
-        <section id="galeria">
+        <section id="galeria"  tabindex="0" aria-label="Seção de galeria de imagens">
             <h2 class="text-center pt-5">Galeria</h2>
             <div class="container p-3 mt-3 fundo-galeria ">
 
@@ -132,6 +133,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
 
 </body>
 
